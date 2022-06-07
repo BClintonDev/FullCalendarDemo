@@ -1,0 +1,210 @@
+#calendar {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.fc-content{
+  color: #fff !important;
+}
+
+.circu{
+  padding: 25px;
+  background: #ccc;
+  border-radius: 50px;
+}
+
+
+#grupoRadio input[type="radio"]:checked + label {
+  border: 3px solid #ccc !important;  
+}
+
+
+.activado input[type=radio]:checked + label {
+  border: 3px solid #555 !important;  
+}
+
+/* Mis estilos */
+.fc-header-toolbar{
+  border: 0px solid red;
+}
+.fc-toolbar-chunk{
+  border: 0px solid blue;
+}
+.fc-button-group{
+  border: 0px solid green;
+}
+
+.fc-button-group .fc-button-group{
+  background-color: #ccc;
+  color: #333;
+}
+
+.fc-today-button{
+  border: 0px solid rgb(0, 255, 76);
+}
+.fc-myCustomButton-button{
+  border: 0px solid tomato;
+}
+
+@media (max-width: 990px) {
+  .fc-header-toolbar{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    height: 150px;
+  }
+  .fc-toolbar-chunk{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .fc-toolbar-chunk:first-child{
+    width: max-content;
+    width: 100%;
+  }
+  .fc-toolbar-chunk:nth-child(2n){
+    width: max-content;
+  }
+  .fc-toolbar-chunk:last-child{
+    width: 100%;
+  }
+
+  .fc-prev-button,
+  .fc-next-button{
+    height: auto;
+  }
+  .fc-today-button{
+    height: 100%;
+  }
+  .fc-myCustomButton-button{
+    width: auto;
+    height: 100%;
+    float: right;
+  }
+
+  .fc-toolbar-title{
+    display: flex;
+    text-align: center;
+  }
+  .fc-dayGridMonth-button{
+    display: none !important;
+  }  
+  .fc-header-toolbar .fc-button-group:first-child{
+    width: max-content;
+  }
+  .fc-header-toolbar .fc-button-group:last-child{
+    width: 100%;
+  }
+}
+
+/* ./ FULL CALENDAR */
+
+.fc-header-toolbar .btn{
+  background: inherit;
+  color: inherit;
+  border: inherit;
+  border: 1px solid rgba(0,0,0,.1);
+}
+.fc-header-toolbar .btn:focus,
+.fc-header-toolbar .btn::selection,
+.fc-header-toolbar .btn:hover,
+.fc-header-toolbar .btn:active{
+  background: inherit;
+  color: inherit;
+  border: inherit;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.fc th,
+.fc-col-header-cell{
+  padding: 5px 0px;
+  vertical-align: middle;
+  background: #fff;
+}
+
+
+
+.dark-mode th,
+.dark-mode .fc-col-header-cell{
+  padding: 5px 0px;
+  vertical-align: middle;
+  background: rgba(0,0,0,.1);
+  color: white;
+}
+.dark-mode .fc-col-header-cell{
+  padding: 5px 0px;
+  vertical-align: middle;
+  background: rgba(0,0,0,.01);
+  color: white;
+}
+
+.fc-col-header-cell-cushion,
+.fc-daygrid-day-number{
+  color: inherit;
+}
+
+.dark-mode .fc-list-day-cushion,
+.dark-mode .fc-daygrid-day-frame{
+  background: rgba(0,0,0,.1);
+}
+
+.fc-col-header-cell div a::first-letter,
+.fc-toolbar-title::first-letter{
+  text-transform: uppercase;
+}
+
+.fc-daygrid-day-top{
+  padding-right: 8px;
+}
+
+.fc-day{
+  text-align: center;
+}
+
+.dark-mode .fc-list-day-cushion{
+  background: rgb(44, 43, 43) !important;
+  color: white !important;
+}
+.dark-mode .fc-list-day-cushion a{
+  color: white !important;
+}
+.dark-mode .fc-list-event:hover,
+.dark-mode .fc-event-today:hover,
+.dark-mode .fc-event-future:hover{
+  background: rgb(34, 33, 33) !important;
+}
+
+#calendar{
+  max-width: 100%;
+}
+
+.dark-mode thead{
+  background: rgba(0,0,0,.1);
+}
+.dark-mode tbody{
+  background: rgba(0,0,0,.05);
+}
+.dark-mode div[id^="fc-dom"] {
+  background: rgb(31, 30, 30) !important;
+}
+
+.dark-mode div[id^="fc-dom"]  .fc-propover-header{
+  background: #000 !important;
+}
+
+.dark-mode div[id^="fc-dom"]  .fc-propover-body{
+  background: #333 !important;
+}
+
+.dark-mode  .fc-more-link,
+.dark-mode  .fc-event{
+  background: inherit;
+  color: #ccc;
+}
+.fc-event-title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
